@@ -7,4 +7,6 @@ const server = createHTTPServer({
   middleware: cors(),
 });
 
+console.log("starting local server");
+
 server.listen(3000);

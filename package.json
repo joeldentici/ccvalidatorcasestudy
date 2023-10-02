@@ -15,6 +15,7 @@
     "@trpc/server": "^10.38.5",
     "cors": "^2.8.5",
     "lodash": "^4.17.21",
+    "nodemon": "^3.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "zod": "^3.22.2"
@@ -32,7 +33,7 @@
     "ui:dev": "vite",
     "ui:build": "tsc && vite build",
     "ui:preview": "vite preview",
-    "api:dev": "yarn api:dev:build && yarn api:dev:serve",
+    "api:dev": "yarn api:dev:build & yarn api:dev:serve",
     "api:dev:build": "tsc --build tsconfig.server.json -w",
     "api:dev:serve": "nodemon --watch build build/server/index.js",
     "api:build": "tsc --build tsconfig.server.json && mkdir -p lambdadist && cp -r node_modules lambdadist/node_modules && cp -r build/server/* lambdadist/",
